@@ -19,10 +19,10 @@ Proyecto integral que combina **desarrollo backend** e **ingeniería de datos**,
 
 Este proyecto implementa un **flujo completo backend + data engineering** que permite:
 
-- Gestionar usuarios, productos y ventas mediante una **API REST segura**
-- Proteger endpoints usando **JWT**
-- Persistir datos transaccionales en **PostgreSQL**
-- Ejecutar un **proceso ETL en Python** para generar métricas analíticas
+- Gestionar usuarios, productos y ventas mediante una **API REST segura**.
+- Proteger endpoints usando **JWT**.
+- Persistir datos transaccionales en **PostgreSQL**.
+- Ejecutar un **proceso ETL en Python** para generar métricas analíticas.
 - Crear tablas agregadas listas para análisis y reporting
 
 El objetivo es simular un **escenario real de sistemas empresariales**, donde conviven un sistema OLTP (API) y un proceso analítico (ETL).
@@ -66,9 +66,9 @@ sales-data-project/
     -   Se crean productos y ventas mediante la API.
     -   Cada venta:
         
-        -   Está asociada a un usuario
-        -   Está asociada a un producto
-        -   Calcula automáticamente el total
+        -   Está asociada a un usuario.
+        -   Está asociada a un producto.
+        -   Calcula automáticamente el total.
 
             
 3.  **Persistencia**
@@ -109,9 +109,9 @@ sales-data-project/
 
 ### Relaciones
 
--   Un usuario tiene muchas ventas 
--   Un producto tiene muchas ventas    
--   Cada venta pertenece a un usuario y a un producto
+-   Un usuario tiene muchas ventas. 
+-   Un producto tiene muchas ventas.    
+-   Cada venta pertenece a un usuario y a un producto.
     
 
 ### Tabla analítica
@@ -154,9 +154,6 @@ El script `etl_sales.py` realiza:
 3.  **Load**
     
     -   Creación de la tabla `sales_summary` en PostgreSQL
-        
-
-Este proceso simula un **pipeline ETL clásico** usado en ingeniería de datos.
 
 ----------
 
@@ -196,9 +193,11 @@ data_pipeline/etl_sales.py
 
 ### 🚀 3. Levantar la API (Node.js)
 
-`cd backend
+```bash
+cd backend
 npm install
-npm run dev` 
+npm run dev
+```
 
 La API quedará disponible en:
 
@@ -219,8 +218,10 @@ La API quedará disponible en:
 
 ### 🔄 5. Ejecutar ETL (Python)
 
-`cd data_pipeline
-python etl_sales.py` 
+```bash
+cd data_pipeline
+python etl_sales.py
+```
 
 Esto creará la tabla `sales_summary`.
 
@@ -240,13 +241,13 @@ Esto creará la tabla `sales_summary`.
         
     -   Python → procesamiento analítico
         
--   Uso de JWT para seguridad
+-   Uso de JWT para seguridad.
     
--   ORM para consistencia del modelo
+-   ORM para consistencia del modelo.
     
 -   ETL desacoplado del backend
     
--   PostgreSQL como fuente de verdad
+-   PostgreSQL como fuente de verdad.
     
 
 ----------
@@ -255,16 +256,16 @@ Esto creará la tabla `sales_summary`.
 
 Demostrar habilidades en:
 
--   Backend con Node.js
+-   Backend con Node.js.
     
--   Autenticación y autorización
+-   Autenticación y autorización.
     
--   Modelado relacional
+-   Modelado relacional.
     
--   SQL
+-   SQL.
     
--   Ingeniería de datos (ETL)
+-   Ingeniería de datos (ETL).
     
--   Python aplicado a datos
+-   Python aplicado a datos.
     
--   Arquitectura end-to-end
+-   Arquitectura end-to-end.
